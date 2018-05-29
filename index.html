@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>邮箱签名系统1.0</title>
+<link href="css/pure.css" type="text/css" rel="stylesheet" />
+<link href="css/carousel.css" type="text/css" rel="stylesheet" />
+<link href="css/modals.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/navbar.css" type="text/css" rel="stylesheet" />
+<link href="css/footer.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"><!-- 滚动条 -->
+<script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+
+</head>
+
+<body>   
+<div class="main">
+<nav class="navbar navbar-default" role="navigation"><!-- nav start -->
+      <div class="con">
+       <div class="navbar-header">
+          <p>&nbsp;</p>
+          <h2>邮箱签名系统1.0</h2>
+        </div><!-- navbar-header end -->
+        <div id="menu" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="javascript://">关于</a></li>
+            <li class="active"><a href="javascript://">资讯</a></li>
+            <li><a href="javascript://">服务</a></li>
+            <li><a href="javascript://">案例</a></li>
+            <li><a href="javascript://">联系</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div class="pure-g con">
+    <div class="pure-u-1-2">
+        <form class="pure-form pure-form-aligned" id="form" method="post" enctype="multipart/form-data">
+            <div class="layour-l">
+            	<div class="layour-info">
+            	<h2>基本信息</h2>
+                <div class="pure-control-group">
+                    <label for="name">姓名：</label>
+                    <input name="name" type="text" value="jh" onkeyup="getvalue.call(this,'.name-txt','.name');"/>
+                </div>
+        
+                <div class="pure-control-group">
+                    <label for="title">职务：</label>
+                    <input name="title" type="text" value="前端开发"  onkeyup="getvalue.call(this,'.title-txt','.title');"/>
+                </div>
+        
+                <div class="pure-control-group">
+                    <label for="company">工作单位：</label>
+                    <input name="company" type="text" value="******" onkeyup="getvalue.call(this,'.company-txt','.company');"/>
+                </div>
+        
+                <div class="pure-control-group">
+                    <label for="phone">手机：</label>
+                    <input name="phone" type="text" value="12345678900" onkeyup="getvalue.call(this,'.phone-txt','.phone');"/>
+                </div>
+                
+                <div class="pure-control-group">
+                    <label for="mobile">电话：</label>
+                    <input name="mobile" type="text" value="12345678900" onkeyup="getvalue.call(this,'.mobile-txt','.mobile');"/>
+                </div>
+                
+                <div class="pure-control-group">
+                    <label for="website">博客：</label>
+                    <input name="website" type="text" value="https://github.com/indigojh" onkeyup="getvalue.call(this,'.website-txt','.website');"/>
+                </div>
+                
+                 <div class="pure-control-group">
+                    <label for="email">邮箱：</label>
+                    <input name="email" type="email" value="jhno1@126.com" onkeyup="getvalue.call(this,'.email-txt','.email');"/>
+                </div>
+                
+                <div class="pure-control-group">
+                    <label for="address">联系地址：</label>
+                    <input name="address" type="text" value="********" onkeyup="getvalue.call(this,'.address-txt','.address');"/>
+                </div>
+                
+                <div class="pure-control-group">
+                    <label for="skype">MSN账号：</label>
+                    <input name="skype" type="text" value="******" onkeyup="getvalue.call(this,'.skype-txt','.skype');"/>
+                </div>
+                
+                </div>
+                
+                <div class="pure-control-group">
+                    <label><a href="#addbox" class="addother" data-toggle="modal">+ 添加一项</a></label>
+                </div>
+             </div>
+             
+             <div class="layour-r">
+             	<div class="layour-icon">
+                    <h2>签名图片</h2>
+                    <div class="pure-photo">                   
+                        <div class="photos"><img src="http://www.visioncreation-test.com/2016/email/images/none.jpg" style="width: 7.69231em; height: 7.69231em;" alt=""/></div>
+                        <a class="btn_addPic" href="javascript:void(0);" name="fileToUpload" title="支持jpg、jpeg、gif、png格式，文件小于5M">选择图片                  
+                            <input class="filePrew" name="fileToUpload" type="file" id="fileToUpload" size="40"  onChange="return upload();"/>
+                        </a>
+                    </div>
+                    
+                    <h2>社交主页</h2>
+                    <div class="pure-control-group">
+                        <label for="weibo"><i style="background:#E53E49;"><img src="images/sina.png" alt=""/></i></label>
+                        <input name="weibo" type="text" value="https://github.com/indigojh" onkeyup="getico.call(this,'.weibo-txt','.weibo');">
+                    </div>
+                    <div class="pure-control-group">
+                        <label for="qqkone"><i style="background:#eecf3d;"><img src="images/qqkone.png" alt=""/></i></label>
+                        <input name="qqkone" type="text" value="https://github.com/indigojh" onkeyup="getico.call(this,'.qqkone-txt','.qqkone');">
+                    </div>
+                    <div class="pure-control-group">
+                        <label for="ting"><i style="background:#45aaf2;"><img src="images/ting.png" alt=""/></i></label>
+                        <input name="ting" type="text" value="https://github.com/indigojh" onkeyup="getico.call(this,'.ting-txt','.ting');">
+                    </div>
+                
+                </div>
+                
+                <div class="pure-control-group">
+                    <label><a href="#contact" class="addother" data-toggle="modal">+ 添加一项</a></label>
+                </div>
+             </div>
+         </form> 
+    </div>
+
+    <div class="pure-u-1-2">
+      <div class="set-box">
+      
+      <!--字号大小-->
+      <div class="set-pro">
+      	<label>字号：</label>
+        <span id="grid_slider1">
+          <i><em class="ui-slider-handle"></em></i>
+        </span>
+      </div>
+      
+       <!--签名字体-->
+       <div class="set-pro">
+            <label>字体：</label>
+            <div class="lab select">
+                <span class="selectOption gray">宋体</span>  
+                <ul class="selectMenu">
+                    <li value="0">Arial</li>
+                    <li value="1">黑体</li>
+                    <li value="2">楷体</li>
+                    <li value="3">微软雅黑</li>
+                    <li value="4">Verdana</li>
+                    <li value="5">Courier</li>
+                    <li value="6">Georgia</li>
+                </ul>  
+                <span class="shows"></span>  
+            </div>
+        </div>
+        
+         <!--图标圆角-->
+        <div class="set-pro" style="margin-top:-3px;">
+      		<label style="position:relative; top:-5px;">图标：</label>
+            <span class="icon-bor">
+                <a href="javascript://" class="radius" data-value="1"></a>
+                <a href="javascript://" class="square active"  data-value="2"></a>
+                <a href="javascript://" class="buns"  data-value="3"></a>
+            </span><br/>
+            
+            <!--图标大小-->
+            <span class="icon-size">
+            	<a href="javascript://" class="s active" data-value="1">小</a>
+                <a href="javascript://" class="m" data-value="2">中</a>
+                <a href="javascript://" class="l" data-value="3">大</a>
+            </span>            
+        </div>
+        
+       <!--清除样式-->
+       <a href="javascript://" class="pure-button pure-button-primary clearbtn" onClick="clearstyle();">清除</a>
+       
+        
+      </div>
+      <div id="myCarousel" class="carousel slide">      
+        <div class="carousel-inner">
+            <div class="item active">
+            	<!--第一套模板-->
+            	<div class="code">                
+                  <div class="sign">              
+                	<div  class="photos" style="float:left; margin-right:15px; font-size:16px;"><img src="http://www.visioncreation-test.com/2016/email/images/none.jpg" style="width: 7.69231em; height: 7.69231em;" alt=""/></div>
+                    <div class="st1 info" style="overflow:hidden; border-left:solid 2px #0078e7; font-size:12px; line-height:24px; color:#444; padding-left:20px;">
+                    	<div class="otherpro">
+                            <div class="name">姓名：<span class="name-txt" style="margin-right:10px;">jh</span>                        
+                            <span class="title">职务：<span class="title-txt">前端开发</span></span></div>
+                            
+                            <div class="company">工作单位：<span class="company-txt">******</span></div>                            
+                            <div class="phone">手机：<span class="phone-txt" style="margin-right:10px;">12345678900</span>
+                            <span class="mobile">电话：<span class="mobile-txt">12345678900</span></span></div>                            
+                            <div class="website">博客：<span class="website-txt">https://github.com/indigojh</span></div>
+                            
+                            <div class="email">邮箱：<span class="email-txt">jhno1@126.com</span></div>
+                            <div class="address">联系地址：<span class="address-txt">********</span></div>
+                            <div class="skype">MSN账号：<span class="skype-txt">******</span></div>
+                        </div>
+                        <div class="otherico" style="font-size:0;">                       
+                        <span style="margin-right:4px;">
+                        	<a class="weibo" target="_blank" href="https://github.com/indigojh" style="display:inline-block; width:12px; height:12px; padding:4px; line-height:0; background:#E53E49;"><img src="http://www.visioncreation-test.com/2016/email/images/sina.png" alt="" style="width:12px; height:12px;"/></a>
+                           <span class="weibo-txt" style="display:none"></span>
+                        </span>
+                        <span style="margin-right:4px;">
+                        	<a class="qqkone" target="_blank" href="https://github.com/indigojh" style="display:inline-block; width:12px; height:12px; padding:4px; line-height:0; background:#eecf3d;"><img src="http://www.visioncreation-test.com/2016/email/images/qqkone.png" alt="" style="width:12px; height:12px;"/></a>
+                            <span class="qqkone-txt" style="display:none"></span>
+                        </span>
+                        <span style="margin-right:4px;">
+                        	<a class="ting" target="_blank" href="https://github.com/indigojh" style="display:inline-block; width:12px; height:12px; padding:4px; line-height:0; background:#45aaf2;"><img src="http://www.visioncreation-test.com/2016/email/images/ting.png" alt="" style="width:12px; height:12px;"/></a>
+                            <span class="ting-txt" style="display:none"></span>
+                        </span>
+                        </div>
+                    </div>
+                </div>  
+              </div>         
+            </div>
+            <div class="item">
+            	<!--第二套模板-->
+            	 <div class="code">                 
+                  	<div class="sign">                     
+                	<div class="photos" style="float:left; margin-right:15px; font-size:16px;"><img src="http://www.visioncreation-test.com/2016/email/images/none.jpg" style="width: 7.69231em; height: 7.69231em;" alt=""/></div>
+                    <div class="info" style="overflow:hidden;  font-size:12px; line-height:24px;color:#444; padding-left:10px;">
+                    	<div class="st1" style="border-bottom:solid 2px #0078e7; padding-bottom:5px; font-size:14px; font-weight:bold;">
+                        	<span class="name">姓名：<span class="name-txt">jh</span></span>
+                        </div>
+                        <div class="st1" style="background:#fbfbfb; margin-top:10px; padding:10px;">
+                        	<div class="otherpro">
+                                <div class="title">职务：<span class="title-txt">前端开发</span></div>
+                                <div class="company">工作单位：<span class="company-txt">******</span></div>                                
+                                <div class="phone">手机：<span class="phone-txt" style="margin-right:10px;">12345678900</span>
+                                	<span class="mobile">电话：<span class="mobile-txt">12345678900</span></span>
+                                </div>
+                                <div class="website">博客：<span class="website-txt">https://github.com/indigojh</span></div>
+                                <div class="email">邮箱：<span class="email-txt">jhno1@126.com</span></div>
+                                <div class="address">联系地址：<span class="address-txt">********</span></div>
+                                <div class="skype">MSN账号：<span class="skype-txt">******</span></div>
+                            </div>
+                            <div class="otherico" style="font-size:0;">                      
+                            <span style="margin-right:4px;">
+                                <a class="weibo" target="_blank" href="https://github.com/indigojh" style="display:inline-block; width:12px; height:12px; padding:4px; line-height:0; background:#E53E49;"><img src="http://www.visioncreation-test.com/2016/email/images/sina.png" style="width:12px; height:12px;" alt=""/></a>
+                               <span class="weibo-txt" style="display:none"></span>
+                            </span>
+                            <span style="margin-right:4px;">
+                                <a class="qqkone" target="_blank" href="https://github.com/indigojh" style="display:inline-block; width:12px; height:12px; padding:4px; line-height:0; background:#eecf3d;"><img src="http://www.visioncreation-test.com/2016/email/images/qqkone.png" style="width:12px; height:12px;" alt=""/></a>
+                                <span class="qqkone-txt" style="display:none"></span>
+                            </span>
+                            <span style="margin-right:4px;">
+                                <a class="ting" target="_blank" href="https://github.com/indigojh" style="display:inline-block; width:12px; height:12px; padding:4px; line-height:0; background:#45aaf2;"><img src="http://www.visioncreation-test.com/2016/email/images/ting.png" style="width:12px; height:12px;" alt=""/></a>
+                                <span class="ting-txt" style="display:none"></span>
+                            </span>
+                            </div>
+                        </div>
+                    </div> 
+                 </div>             
+              </div>
+            </div>
+            <div class="item">
+            	<!--第三套模板-->
+            	 <div class="code">                 
+                  <div class="sign">               
+                	<div class="photos" style="float:left; margin-right:15px; font-size:16px;"><img src="http://www.visioncreation-test.com/2016/email/images/none.jpg" style="width: 7.69231em; height: 7.69231em;" alt=""/></div>
+                    <div class="info" style="overflow:hidden; font-size:12px; line-height:24px; color:#444;">
+                        <div class="name">
+                        	<span class="name-txt st2" style="color:#0078e7;">jh</span>
+                        </div>
+                        <div class="name st1" style="border-bottom:solid 1px #0078e7;padding-bottom:5px; margin-bottom:5px;">
+                        	<span class="company-txt st2" style="color:#0078e7;">******</span>
+                        </div>
+                        <div class="otherpro">                             
+                        <div class="title"><span class="st2" style="color:#0078e7;">职务：</span><span class="title-txt">前端开发</span></div>  
+                                     
+                        <div class="phone"><span class="st2" style="color:#0078e7;">手机：</span><span class="phone-txt" style="margin-right:10px;">12345678900</span>
+                        <span class="mobile"><span class="st2" style="color:#0078e7;">电话：</span><span class="mobile-txt">12345678900</span></span></div>
+                        
+                        <div class="website"><span class="st2" style="color:#0078e7;">博客：</span><span class="website-txt">https://github.com/indigojh</span></div>
+                        <div class="email"><span class="st2" style="color:#0078e7;">邮箱：</span><span class="email-txt">jhno1@126.com</span></div>
+                        <div class="address"><span class="st2" style="color:#0078e7;">联系地址：</span>：<span class="address-txt">********</span></div>
+                        <div class="skype st1" style="border-bottom:solid 1px #0078e7;padding-bottom:5px; margin-bottom:5px;">
+                        	<span class="skype"><span class="st2" style="color:#0078e7;">MSN账号：</span><span class="skype-txt ">******</span></span>
+                        </div>  
+                        </div>
+                        <div class="otherico" style="font-size:0;">                      
+                        <span style="margin-right:4px;">
+                            <a class="weibo" target="_blank" href="https://github.com/indigojh" style="display:inline-block; width:12px; height:12px; padding:4px; line-height:0; background:#E53E49;"><img src="http://www.visioncreation-test.com/2016/email/images/sina.png" style="width:12px; height:12px;" alt=""/></a>
+                           <span class="weibo-txt" style="display:none"></span>
+                        </span>
+                        <span style="margin-right:4px;">
+                            <a class="qqkone" target="_blank" href="https://github.com/indigojh" style="display:inline-block; width:12px; height:12px; padding:4px; line-height:0; background:#eecf3d;"><img src="http://www.visioncreation-test.com/2016/email/images/qqkone.png" style="width:12px; height:12px;" alt=""/></a>
+                            <span class="qqkone-txt" style="display:none"></span>
+                        </span>
+                        <span style="margin-right:4px;">
+                            <a class="ting" target="_blank" href="https://github.com/indigojh" style="display:inline-block; width:12px; height:12px; padding:4px; line-height:0; background:#45aaf2;"><img src="http://www.visioncreation-test.com/2016/email/images/ting.png" style="width:12px; height:12px;" alt=""/></a>
+                            <span class="ting-txt" style="display:none"></span>
+                        </span>
+                        </div>                      
+                    </div>  
+                 </div>            
+              </div>
+            </div>
+        </div>       
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    	<div class="set-other">
+        	<!--图像圆角-->
+        	<div class="photo-size">
+            	<a href="javascript://" class="radius" data-value="1"></a>
+                <a href="javascript://" class="square active" data-value="2"></a>
+                <a href="javascript://" class="buns" data-value="3"></a>
+                <!--图像大小-->
+                <span id="grid_slider">
+                    <i><em class="ui-slider-handle"></em></i>
+                </span>
+            </div>
+            <div class="subset">   
+            	<div class="color-ico">
+                	<a href="javascript://" class="c1"></a>
+                    <a href="javascript://" class="c2"></a>
+                    <a href="javascript://" class="c3"></a>
+                    <a href="javascript://" class="c4"></a>
+                    <a href="javascript://" class="c5"></a>
+                    <a href="javascript://" class="c6"></a>
+                    <a href="javascript://" class="c7"></a>
+                    <a href="javascript://" class="c8"></a>
+                    <i class="c9"></i>
+                </div>            	
+                <button type="button" class="pure-button pure-button-primary" role="button" data-toggle="modal" data-target="#myModal">保存签名</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--保存签名代码-->
+<div id="myModal" class="modal fade codebox" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-bar">
+        <a href="javascript://" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+        <h2>签名代码</h2>
+    </div>
+    <div class="modal-body">
+        <textarea class="code" readonly></textarea>
+        <div class="bor-btn2">
+        	<button type="button" class="pure-button pure-button-primary">复制代码</button>
+        </div>
+    </div>
+</div>
+
+<!--添加基本信息-->
+<div id="addbox" class="modal fade addbox" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-bar">
+        <a href="javascript://" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+        <h2>添加自定义字段</h2>
+    </div>
+    <div class="modal-body">
+       <form class="pure-form">
+           <input type="text" class="textkey" placeholder="标题"/>              
+           <input type="text" class="textvalue" placeholder="内容"/>
+       </form>
+       <div class="addbtn">
+            <button type="button" class="pure-button pure-button-primary" onClick="addtext();">提交</button>
+       </div>
+    </div>
+</div>
+
+<!--添加社区链接-->
+<div id="contact" class="modal fade addbox" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-bar">
+        <a href="javascript://" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+        <h2>社交图标</h2>
+    </div>
+    <div class="modal-body">
+    	<ul class="contact-icon">
+            <li><a href="javascript://" style="background:#3eb135;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/weixin.png" alt="微信"/></a></li>
+            <li><a href="javascript://" style="background:#24bc00;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/pengyou.png" alt="朋友网"/></a></li>
+            <li><a href="javascript://" style="background:#1960ad;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/baidu.png" alt="百度空间"/></a></li>
+            <li><a href="javascript://" style="background:#1361a7;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/renren.png" alt="人人网"/></a></li>
+            <li><a href="javascript://" style="background:#2e9e3b;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/douban.png" alt="豆瓣"/></a></li> 
+            <li><a href="javascript://" style="background:#516ebf;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/facebook.png" alt="facebook"/></a></li>
+            <li><a href="javascript://" style="background:#2d96e8;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/twitter.png" alt="twitter"/></a></li>            
+            <li><a href="javascript://" style="background:#eb5350;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/youtobe.png" alt="youtobe"/></a></li>
+            <li><a href="javascript://" style="background:#d43d27;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/google+.png" alt="google"/></a></li>
+            <li><a href="javascript://" style="background:#ab47ac;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/yahoo.png" alt="雅虎"/></a></li>  
+            <li><a href="javascript://" style="background:#4578ac;" onClick="addicon.call(this);"><img src="http://www.visioncreation-test.com/2016/email/images/tumblr.png" alt="tumblr"/></a></li>
+        </ul>     
+    </div>
+</div>
+
+<div class="footer"><!-- footer start -->
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+    </div><!-- footer end -->
+<!--<script src="js/jquery.formHelp.js" type="text/javascript"></script>-->
+<script src="js/carousel.js" type="text/javascript"></script>
+<script src="js/modals.js" type="text/javascript"></script>
+<script src="js/ajaxfileupload.js" type="text/javascript"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script><!-- 滚动条 -->
+<script src="js/jquery.colorpicker.js"></script><!-- 滚动条 -->
+<script src="js/jquery-ui.js"></script> 
+<script src="js/email.js" type="text/javascript"></script>   
+
+</body>
+</html>
