@@ -1,0 +1,14 @@
+.footer{background-color: #23272f;color: #606572;  clear: both; z-index:0; width:100%;   overflow: hidden; position:absolute; bottom:0; z-index:0;}
+.footer a:hover{ text-decoration:underline;}
+.footer span.iconfont{margin-right: 8px;color: #f94653;}
+.footer h4{font-size: 16px;margin-bottom: 15px;color: #828797;margin-top: 0;line-height: 1.5}
+.footer h4 a{color: #828797;}
+.footer h4 font{font-size: 12px;vertical-align: middle;}
+.footer p.text-uppercase{margin-top: 26px;font-size: 13px;text-transform: uppercase;}
+.footer p em{font-style: normal;color: #828797;}
+.footer .pure-u-1{margin-top: 10px;}
+
+.footer p{ font-size:14px;}
+.footer p.g-fs13{ font-size:14px; line-height:22px; margin-right: 10%;}
+
+.footer p.text-capitalize { text-transform: capitalize; margin-bottom:10px; }

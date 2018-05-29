@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family:"Microsoft YaHei",arial,simsun; font-size:12px; color:#444;}
+a{color:#444;text-decoration:none; outline:none;}
+a:hover{ text-decoration:none; outline:none;}
+.main{ width:100%; background:#fff; position:relative; z-index:1;}
+.con{width:1200px;margin:0 auto;}
+.main .pure-form{ background:#f5f5f5; border:solid 1px #eee; margin-right:2%; overflow:hidden;}
+.main .pure-form input{ border-width:0 0 1px 0; box-shadow:none; border-radius:0; color:#666; background:#f5f5f5;}
+
+.main .layour-l{ float:left; padding:0 0 15px 10px; }
+.main .layour-r{ float:right; border-left:solid 1px #eee; padding:0 0 15px 10px;}
+
+.pure-form-aligned .pure-control-group label{ width:6.5em;}
+h2{ font-family:"微软雅黑"; font-size:18px; line-height:20px; margin-left:10px;border-left:solid 3px #0078e7; padding-left:10px;}
+
+.pure-photo{ width:280px; margin:10px 0 47px 11px;}
+
+
+
+.bor-btn2{ padding-top:10px; text-align:right;}
+
+.set-other{overflow:hidden; padding:10px 0;}
+
+
+.photo-size{ float:left; width:45%;}
+.subset{ float:right; width:55%; }
+.color-ico{ float:left; height:20px; margin-top:4px; margin-right:12px;}
+.color-ico a,.color-ico i{ display:inline-block; _zoom:1;*display:inline; width:20px; height:20px; font-size:0; margin-right:1px; border-radius:50%; }
+.color-ico a.c1{ background:#5e5e5e;}
+.color-ico a.c2{ background:#a7a7a7;}
+.color-ico a.c3{ background:#1a75d0;}
+.color-ico a.c4{ background:#0296a4;}
+.color-ico a.c5{ background:#6a9e39;}
+.color-ico a.c6{ background:#c01a5c;}
+.color-ico a.c7{ background:#f37b01;}
+.color-ico a.c8{ background:#c68e50;}
+.color-ico i.c9{ background:url(../images/colorpicker.png) no-repeat; background-size:100% 100%; cursor:pointer; }
+.subset button{ float:right;}
+
+#colorpanel{ font-size:12px; color:#444;}
+
+._mCS_1 .mCSB_scrollTools .mCSB_dragger{left:0;}
+._mCS_1 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background-color: #c1c1c1;}
+._mCS_1 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{background-color: #c1c1c1;}
+._mCS_1 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+._mCS_1 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{background-color: #c1c1c1;}
+.mCSB_scrollTools .mCSB_draggerRail{ width:8px!important; background:#eee!important;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCustomScrollBox>.mCSB_scrollTools{width:8px!important;}
+.mCSB_container{ margin-right:8px!important;}
+
+.set-box{ background:#f5f5f5; padding:20px;border:solid 1px #eee; height:36px; border-bottom:none; }
+.set-pro{ float:left; margin-right:20px;}
+
+/*下拉框*/
+.set-pro .lab { position: relative; z-index: 5; width: 80px; height: 22px; line-height: 22px; border: 1px solid #e2e2e2; background-color: #fff; padding: 0 5px;  display: inline-block; _zoom:1;*display:inline; cursor: pointer;}
+.set-pro .lab .selectOption {  width: 100%; position:relative; left:5px;  font-size: 12px;  white-space: nowrap;  overflow: hidden;  border: none;  z-index: 100;}
+.set-pro .lab .shows {  width: 20px;  height: 20px;  position: absolute;  right: 5px;  top: 1px;  background: url(../images/arrows.jpg) no-repeat center;}
+.set-pro .lab ul {  position: absolute;  border: solid 1px #eee; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);  width: 100%; margin:0; padding:0;  max-height: 120px;  overflow-x: hidden;  overflow-y: auto;  top: 23px;  left: -1px;  display: none;}
+.set-pro .lab ul li {  margin:0; list-style:none;  padding: 0 10px;  font-size: 12px;  border-top: none;  width: 290px;  background: #FFF;  cursor: pointer;}
+.set-pro .lab ul li:hover {  background: #0078e7;  color: #fff;}
+.set-pro .lab ul li + li {  border-top: solid 1px #eee;}
+.set-pro .lab ul.dis { display: block!important;}
+.set-pro .lab ul.undis { display: none!important;}
+.set-pro .lab .gray { color: #444;}
+.set-pro .lab:hover { border: solid 1px #0078e7;}
+.set-pro .zIndex {  z-index: 100!important;}
+
+.carousel{ background:#f5f5f5; padding:20px 40px;border:solid 1px #eee;}
+.carousel .carousel-inner{border:solid 1px #eee;}
+.carousel .item{background:#fff; padding:20px;height:205px; overflow-y:auto;}
+.carousel .carousel-control{ background-image:none; width:30px; height:30px; color:#000; font-size:36px; top:45%;}
+.carousel .left{ left:.5%;}
+.carousel .right{ right:.5%;}
+
+
+
+.codebox{ width:800px!important; margin-left: -400px!important; display:none;}
+.modal-bar{ padding:0 12px; border-bottom:solid 2px #0078e7;}
+.modal-bar a{ float:right; font-size:24px; font-family:"宋体"; padding-top:10px; color:#ccc; }
+.modal-bar h2{ font-size:16px; display:inline-block; _zoom:1;*display:inline;}
+.modal-body{padding:20px;}
+.modal-body textarea{background-color: #fff;  border: 1px solid #ccc;  min-height: 300px;   overflow: auto; position: relative; resize: none; width: 750px;}
+
+
+a.btn_addPic{ display:inline-block;  _zoom:1;*display:inline;position: relative; top:5px;width: 92px;height: 22px; overflow: hidden; line-height:22px;background: #0078e7; color:#fff; cursor: pointer; text-align: center; border-radius: 4px;} 
+
+input.filePrew { display: block; position: absolute; top: 0; cursor: pointer;left: 0; width: 140px; height: 39px; font-size: 100px;opacity: 0;filter:alpha(opacity=0);} 
+
+
+.ui-slider{position:relative;top:3px; left:0; border-radius:5px; display:inline-block;  _zoom:1;*display:inline;width:100px; height:10px; background:#6c6c6c;}
+.ui-slider i{display:inline-block;  _zoom:1;*display:inline; position:relative; width:80px; height:10px; left:0;top:-4px; margin-right:20px;}
+.ui-slider em.ui-slider-handle{position:absolute;top:-4px; left:0;border-radius:50%; display:inline-block;  _zoom:1;*display:inline;width:20px; height:20px; line-height:0; font-size:0; background:#d6d6d6; cursor:pointer;}
+
+.set-other .ui-slider{ top:10px; left:15px;}
+
+a.addother{ color:#0078e7; display:block; margin-top:5px; outline:none;}
+.layour-icon .pure-control-group label{ width:24px!important; margin-left:11px!important;}
+.pure-control-group label i{display:inline-block;  _zoom:1;*display:inline; width:24px!important; height:24px; border-radius:50%; vertical-align:middle;}
+.pure-control-group label i img{ width:16px; height:16px; padding:4px;}
+
+.icon-bor{display:inline-block;  _zoom:1;*display:inline;}
+.icon-bor a,.photo-size a,.icon-size a{float:left; display:inline-block;  _zoom:1;*display:inline;width:16px; height:16px; border:solid 1px #ccc; margin-right:5px; margin-top:5px; cursor:pointer; }
+.icon-bor a:hover,.icon-bor a.active,.photo-size a:hover,.photo-size a.active{ border-color:#0078e7; background:#0078e7;}
+.icon-bor a.radius,.photo-size a.radius{ border-radius:4px;}
+.icon-bor a.square,.photo-size a.square{ border-radius:0px;}
+.icon-bor a.buns,.photo-size a.buns{ border-radius:50%;}
+
+.icon-size{ margin-top:10px; text-align:center;display:inline-block;  _zoom:1;*display:inline; margin:0 0 0 42px;}
+.icon-size a{ line-height:14px; width:14px; height:14px; background:#fff;}
+.icon-size a.active{border-color:#0078e7; color:#fff; background:#0078e7;}
+a.clearbtn{ float:right;}
+
+.addbox{ width:460px!important; margin-left:-230px!important; display:none;}
+.addbox .pure-form{ padding:10px 0; text-align:center;}
+.textvalue{ width:245px; margin-left:12px;}
+.addbox input{ border-radius:0!important; font-size: 12px!important; box-shadow:none!important; padding:10px 5px!important;}
+.addbtn{ text-align:center; margin-top:10px;}
+.addbtn button{ width:100%; padding:10px 0; font-size:14px;}
+
+.contact-icon{ overflow:hidden;}
+.contact-icon li{ float:left; width:40px; height:40px; margin:10px; font-size:0;}
+.contact-icon li a{ display:inline-block; padding:4px;  font-size:0; border-radius:5px;}
+
+@font-face {font-family: 'iconfont';
+    src: url('../css/fonts/vision/iconfont.eot'); /* IE9*/
+    src: url('../css/fonts/vision/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../css/fonts/vision/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../css/fonts/vision/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../css/fonts/vision/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{font-family:"iconfont" !important;font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
+

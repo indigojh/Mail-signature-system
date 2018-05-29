@@ -1,0 +1,31 @@
+.navbar-default {
+    background-color: #23272f;
+    padding: 20px 0;
+    width: 100%; margin-bottom:20px;
+	overflow:hidden;
+}
+.navbar-header{ float:left;}
+.navbar-right{ float:right;}
+
+.navbar-header h2{ border-color:#e63b47; color:#fff; font-size:24px;}
+
+.nav>li {
+	float: left;
+    position: relative;
+    display: block;
+}
+
+.nav>li>a{color: #ccc; line-height: 20px; padding: 10px 15px; font-size:14px;
+    border-bottom: 2px solid transparent;
+    transition: color .6s,border-color .6s;
+    -moz-transition: color .6s,border-color .6s;
+    -webkit-transition: color .6s,border-color .6s;
+    -o-transition: color .6s,border-color .6s;}
+
+.nav>li>a.active,
+.nav>li>a:hover,
+.nav>li>a:focus{
+    color: #fff;
+    border-bottom-color: #e63b47;
+    background-color: transparent;
+}
